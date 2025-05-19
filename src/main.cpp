@@ -1,15 +1,16 @@
 #include "../include/Game.h"
 #include "../include/Player.h"
 
+// Entry point of the program
 int main() {
-    // Crear los dos jugadores
-    Player p1("Alice", 'X');
-    Player p2("Bob", 'O');
+    // Create two players with names and symbols
+    Player p1("P1", 'X');
+    Player p2("P2", 'O');
 
-    // Crear la instancia del juego
+    // Create the game instance with the two players
     Game game(p1, p2);
 
-    // Iniciar el juego
+    // Start the game loop
     game.startGame();
 
     return 0;
